@@ -26,7 +26,7 @@ class AuthView extends StatelessWidget {
                     style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.orange,
                     ),
                     ),
-                    Text('Titolo tsjpilljsjk fuhskhmfkvk h fnkshkshkn ksj kz nkjndhka kcns',style: TextStyle(fontSize: 80,fontWeight: FontWeight.bold,color: Colors.orange,
+                    Text('ChatGPT Service AI',style: TextStyle(fontSize: 80,fontWeight: FontWeight.bold,color: Colors.orange,
                     ),
                     ),
                     SizedBox.shrink(),
@@ -46,7 +46,7 @@ class AuthView extends StatelessWidget {
                   SizedBox(),
                   Column(
                     children: [
-                      Text('jfhbhf',style: TextStyle(fontSize: 28,),
+                      Text('Join Us!',style: TextStyle(fontSize: 28,),
                       ),
                       SizedBox(height: 20,),
                       Row(crossAxisAlignment: CrossAxisAlignment.center,
@@ -59,7 +59,7 @@ class AuthView extends StatelessWidget {
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),border: Border.all(color: Colors.amber)
                             ),
                             child: Center(
-                              child: Text ('AAAAA',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.amber,
+                              child: Text ('Get started Free',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.amber,
                               ),
                             ),
                           ),
@@ -70,7 +70,7 @@ class AuthView extends StatelessWidget {
                             height: 48,
                             decoration: BoxDecoration(color: Colors.amber, borderRadius: BorderRadius.circular(16),),
                             child: Center(
-                              child: Text ('BBBBB',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.white,
+                              child: Text ('Subscribe Premium',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.white,
                               ),),
                             ),
                           ),
