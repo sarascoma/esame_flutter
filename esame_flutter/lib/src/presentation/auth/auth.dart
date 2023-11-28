@@ -26,7 +26,7 @@ class AuthView extends StatelessWidget {
                     style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.orange,
                     ),
                     ),
-                    Text('ChatGPT Service AI',style: TextStyle(fontSize: 80,fontWeight: FontWeight.bold,color: Colors.orange,
+                    Text('Chat GPT Service AI',style: TextStyle(fontSize: 70,fontWeight: FontWeight.bold,color: Colors.orange,
                     ),
                     ),
                     SizedBox.shrink(),
@@ -59,7 +59,7 @@ class AuthView extends StatelessWidget {
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),border: Border.all(color: Colors.amber)
                             ),
                             child: Center(
-                              child: Text ('Get started Free',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.amber,
+                              child: Text ('Get started for FREE',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.amber,
                               ),
                             ),
                           ),
