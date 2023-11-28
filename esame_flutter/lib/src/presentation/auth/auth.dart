@@ -13,7 +13,7 @@ class AuthView extends StatelessWidget {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.yellow,
+                color: Color.fromARGB(255, 255, 243, 136),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -22,11 +22,11 @@ class AuthView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    Text('Logo',
+                    Text('ChatGPT',
                     style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.orange,
                     ),
                     ),
-                    Text('Chat GPT Service AI',style: TextStyle(fontSize: 70,fontWeight: FontWeight.bold,color: Colors.orange,
+                    Text('AI service that helps you in everything',style: TextStyle(fontSize: 70,fontWeight: FontWeight.bold,color: Colors.orange,
                     ),
                     ),
                     SizedBox.shrink(),
@@ -46,7 +46,7 @@ class AuthView extends StatelessWidget {
                   SizedBox(),
                   Column(
                     children: [
-                      Text('Join Us!',style: TextStyle(fontSize: 28,),
+                      Text('Join Us!',style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 20,),
                       Row(crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,10 +56,10 @@ class AuthView extends StatelessWidget {
                             
                             width: 200,
                             height: 48,
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),border: Border.all(color: Colors.amber)
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),border: Border.all(color: Color.fromARGB(255, 1, 1, 255))
                             ),
                             child: Center(
-                              child: Text ('Get started for FREE',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.amber,
+                              child: Text ('Get started for FREE',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: const Color.fromARGB(255, 255, 255, 255),
                               ),
                             ),
                           ),
@@ -68,7 +68,7 @@ class AuthView extends StatelessWidget {
                           Container (
                             width:200,
                             height: 48,
-                            decoration: BoxDecoration(color: Colors.amber, borderRadius: BorderRadius.circular(16),),
+                            decoration: BoxDecoration(color: Color.fromARGB(255, 1, 1, 255), borderRadius: BorderRadius.circular(16),),
                             child: Center(
                               child: Text ('Subscribe Premium',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.white,
                               ),),
@@ -80,7 +80,7 @@ class AuthView extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      Text('jfhbhf''hfdhfb',style: TextStyle(fontSize: 12,color: Colors.grey,),),
+                      Text('OpenAI',style: TextStyle(fontSize: 20,color: Colors.grey,),),
                       SizedBox(height: 8,),
                       Row(crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -88,14 +88,14 @@ class AuthView extends StatelessWidget {
                           // ignore: avoid_unnecessary_containers
                           Container (
                             child: Center(
-                              child: Text ('hfdhfb',style: TextStyle(fontSize: 12,color: Colors.grey,),),
+                              child: Text ('Terms of use',style: TextStyle(fontSize: 12,color: Colors.grey,),),
                             ),
                           ),
                           Text(' I ',style: TextStyle(fontSize: 12,color: Colors.grey,),),
                           // ignore: avoid_unnecessary_containers
                           Container (
                             child: Center(
-                              child: Text ('hfdhfb''hfdhfb',style: TextStyle(fontSize: 12,color: Colors.grey,),),
+                              child: Text ('Policy',style: TextStyle(fontSize: 12,color: Colors.grey,),),
                             ),
                           ),
                         ],
