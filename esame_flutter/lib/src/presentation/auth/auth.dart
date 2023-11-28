@@ -56,8 +56,7 @@ class AuthView extends StatelessWidget {
                             
                             width: 200,
                             height: 48,
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),border: Border.all(color: Color.fromARGB(255, 1, 1, 255))
-                            ),
+                            decoration: BoxDecoration(color: Color.fromARGB(255, 1, 1, 255), borderRadius: BorderRadius.circular(16),),
                             child: Center(
                               child: Text ('Get started for FREE',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: const Color.fromARGB(255, 255, 255, 255),
                               ),
