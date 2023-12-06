@@ -14,6 +14,16 @@ class Sidebar extends StatelessWidget {
         Row(
           children: [
             Container(),
+            Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.network(
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/768px-ChatGPT_logo.svg.png',
+                width: 35,
+                ),
+              ),
+            ),
             const Text(
               'New chat',
               style: TextStyle(color: Colors.white),
@@ -361,7 +371,7 @@ class Sidebar extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.network(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Whitestar_black.svg/1074px-Whitestar_black.svg.png',
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg',
                   width: 35,
                 ),
               ),
@@ -394,7 +404,7 @@ class Sidebar extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.network(
-                  'https://clinicalaveterinaria.it/wp-content/uploads/2022/02/sua-maesta-gatto.jpg',
+                  'https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2023/11/19/3828960-77812128-2560-1440.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
