@@ -15,7 +15,7 @@ class Sidebar extends StatelessWidget {
           children: [
             Container(),
             const Text(
-              'ChatGPT',
+              'New chat',
               style: TextStyle(color: Colors.white),
             ),
             const Spacer(),
@@ -38,14 +38,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'Previous 30 Days',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Biometric fusion project',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -53,7 +53,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Arduino + TouchDesigner',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -61,7 +61,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Marketing strategy assistance',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -78,14 +78,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'October',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Diagramma di Gantt',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -93,7 +93,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Lancio dado',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -101,7 +101,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Among Us game',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -118,14 +118,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'July',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Riscrivere testo',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -133,7 +133,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'Parole random video',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -141,7 +141,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -158,14 +158,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'June',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -173,7 +173,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -181,7 +181,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -198,14 +198,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'May',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -213,7 +213,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -221,7 +221,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -238,14 +238,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'April',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -253,7 +253,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -261,7 +261,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -278,14 +278,14 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'March',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102)),
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
                       ),
                     ],
                   ),
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -293,7 +293,7 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -301,7 +301,47 @@ class Sidebar extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'Blabla',
+                        'lalalalalalala',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  SizedBox(
+                    height: 32,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'January',
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'lalalalalalala',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'lalalalalalala',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'lalalalalalala',
                         style: TextStyle(color: Colors.white),
                       ),
                     ],
@@ -331,11 +371,11 @@ class Sidebar extends StatelessWidget {
               children: [
                 Text(
                   'Upgrade',
-                  style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),
+                  style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 14),
                 ),
                 Text(
                   'Get GPT-4, DALL·E, and more',
-                  style: TextStyle(color: Colors.grey,fontSize: 12),
+                  style: TextStyle(color: Color.fromARGB(255, 204, 204, 204),fontSize: 12),
                 ),
               ],
             ),
@@ -347,20 +387,23 @@ class Sidebar extends StatelessWidget {
               height: 60,
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 20),
+            padding: const EdgeInsets.only(right: 20),
+            child: Container(
+              width: 35,
+              height: 35,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.network(
                   'https://clinicalaveterinaria.it/wp-content/uploads/2022/02/sua-maesta-gatto.jpg',
-                  width: 35,
-                  height: 35,
                   fit: BoxFit.cover,
                 ),
               ),
             ),
+          ),
+
             const Text(
               'Sara Scomazzon',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
             ),
           ],
         ),
