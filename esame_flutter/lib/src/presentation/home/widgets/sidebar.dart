@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Sidebar extends StatelessWidget {
@@ -5,36 +6,48 @@ class Sidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isScreenNarrow= MediaQuery.of(context).size.width <=600;
     return SizedBox(
-        child: Container(
-      color: const Color.fromARGB(255, 29, 29, 29),
       width: 300,
-      padding: const EdgeInsets.all(20.0),
-      child: Column(children: [
-        Row(
+      child: Container(
+        color: const Color.fromARGB(255, 29, 29, 29),
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
           children: [
-            Container(),
-            Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.network(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/768px-ChatGPT_logo.svg.png',
+            Row(
+              children: [
+                Padding(padding: const EdgeInsets.only(right: 20),
+                child: ClipRRect(borderRadius: BorderRadius.circular(20),
+                child: Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/768px-ChatGPT_logo.svg.png',
                 width: 35,
                 ),
-              ),
+                ),
+                ),
+                const Expanded(
+                  child: Text(
+                    'ChatGPT',
+                    style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  const Icon(
+                    Icons.add,
+                    color: Colors.white,
+                    ),
+                    if (isScreenNarrow)
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Icon(
+                          CupertinoIcons.xmark,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+              ],
             ),
-            const Text(
-              'New chat',
-              style: TextStyle(color: Colors.white),
-            ),
-            const Spacer(),
-            const Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ],
-        ),
         Expanded(
           child: ListView(
             children: const [
@@ -398,7 +411,7 @@ class Sidebar extends StatelessWidget {
             ),
             Padding(
             padding: const EdgeInsets.only(right: 20),
-            child: Container(
+            child: SizedBox(
               width: 35,
               height: 35,
               child: ClipRRect(

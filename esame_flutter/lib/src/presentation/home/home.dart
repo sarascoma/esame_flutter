@@ -1,3 +1,4 @@
+import 'package:esame_flutter/src/presentation/home/widgets/main_section.dart';
 import 'package:esame_flutter/src/presentation/home/widgets/sidebar.dart';
 import 'package:flutter/material.dart';
 
@@ -7,11 +8,29 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(children: [
-        //SideBar
-        Sidebar(),
-        //ChatSection
-      ],),
+      drawer:  SizedBox(
+        width: MediaQuery.sizeOf(context).width * 0.7,
+        child: const Sidebar(),
+      ),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          final isMobile = constraints.maxWidth <= 600;
+          return Row(
+            children: [
+            //SideBar
+              Visibility(
+                visible: !isMobile,
+                child: const SizedBox(
+                  width: 300,
+                  child: Sidebar(),
+                ),
+                ),
+
+            //ChatSection
+            const MainSection(),
+          ],);
+        }
+      ),
     );
   }
 }
