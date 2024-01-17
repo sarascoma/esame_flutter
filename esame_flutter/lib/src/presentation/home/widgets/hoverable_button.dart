@@ -36,7 +36,7 @@ class _HoverableButtonState extends State<HoverableButton> {
         margin: const EdgeInsets.all(16),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: isHovered ? const Color.fromARGB(255, 163, 163, 163): Colors.white,
+          color: isHovered ? const Color.fromARGB(255, 230, 116, 232): Colors.white,
           borderRadius: BorderRadius.circular(8),
         ),
         child: const Row(

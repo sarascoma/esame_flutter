@@ -10,7 +10,7 @@ class Sidebar extends StatelessWidget {
     return SizedBox(
       width: 300,
       child: Container(
-        color: const Color.fromARGB(255, 29, 29, 29),
+        color: const Color.fromARGB(255, 38, 53, 96),
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
@@ -26,7 +26,7 @@ class Sidebar extends StatelessWidget {
                 const Expanded(
                   child: Text(
                     'ChatGPT',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),
                     ),
                   ),
                   const Icon(
@@ -61,7 +61,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'Previous 30 Days',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -101,7 +101,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'October',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -141,7 +141,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'July',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -181,7 +181,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'June',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -221,7 +221,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'May',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -261,7 +261,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'April',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -301,7 +301,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'March',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -341,7 +341,7 @@ class Sidebar extends StatelessWidget {
                       Text(
                         'January',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 102, 102, 102),fontSize: 12),
+                            color: Color.fromARGB(255, 230, 116, 232),fontSize: 12,fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -394,7 +394,7 @@ class Sidebar extends StatelessWidget {
               children: [
                 Text(
                   'Upgrade',
-                  style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 14),
+                  style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),
                 ),
                 Text(
                   'Get GPT-4, DALL·E, and more',
@@ -426,7 +426,7 @@ class Sidebar extends StatelessWidget {
 
             const Text(
               'Sara Scomazzon',
-              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+              style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 16),
             ),
           ],
         ),

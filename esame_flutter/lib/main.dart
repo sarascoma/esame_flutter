@@ -1,8 +1,16 @@
 import 'package:esame_flutter/src/presentation/auth/auth.dart';
 import 'package:esame_flutter/src/presentation/home/home.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: 'https://lgeqhqsmvxrlmraeseaa.supabase.co',
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxnZXFocXNtdnhybG1yYWVzZWFhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ4ODYxODksImV4cCI6MjAyMDQ2MjE4OX0.ek5v_Gwsl4BAnhtAM6hjTubI0-fR_SXGCbVqxY9R23s',
+  );
+
   runApp(const MyApp());
 }
 

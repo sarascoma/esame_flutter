@@ -1,3 +1,4 @@
+import 'package:esame_flutter/src/presentation/home/widgets/chat_section.dart';
 import 'package:esame_flutter/src/presentation/home/widgets/main_section.dart';
 import 'package:esame_flutter/src/presentation/home/widgets/sidebar.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,16 @@ class HomeView extends StatelessWidget {
                 ),
 
             //ChatSection
-            const MainSection(),
+            Expanded(
+              child: Stack(
+                children: [
+                  Container(
+                    color: const Color.fromARGB(255, 130, 150, 223),
+                  ),
+                  const ChatSection(),
+                ],
+              ),
+            ),
           ],);
         }
       ),

@@ -13,21 +13,26 @@ class MainSection extends StatelessWidget {
           children: [
             Column(
       children: [
-        if (MediaQuery.sizeOf(context).width <=600)
-        GestureDetector(
-          onTap: () {
-            if (Scaffold.of(context).isDrawerOpen){
-              Scaffold.of(context).openDrawer();
-            }
-          },
-          child: const Icon(Icons.menu)),
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  alignment: Alignment.topLeft,
-                  child: const HoverableButton(),
+                Row(
+                  children: [
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: const HoverableButton(),
+                    ),
+
+        if (MediaQuery.sizeOf(context).width <=600)
+        GestureDetector(
+          onTap: () {
+            if (!Scaffold.of(context).isDrawerOpen){
+              Scaffold.of(context).openDrawer();
+            }
+          },
+          child: const Icon(Icons.menu)),
+                  ],
                 ),
                 Column(
                   children: [
@@ -56,23 +61,26 @@ class MainSection extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SuggestionButton(title: 'Testo1', description: 'Testo2'),
-                        SuggestionButton(title: 'Testo', description: 'Testo2'),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SuggestionButton(title: 'Testo2', description: 'Testo2'),
-                        SuggestionButton(title: 'Testo2', description: 'Testo2'),
-                      ],
-                    ),
-                  ],
+                const Padding(
+                  padding: EdgeInsets.all(26.0),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SuggestionButton(title: 'Testo1', description: 'Testo2'),
+                          SuggestionButton(title: 'Testo', description: 'Testo2'),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SuggestionButton(title: 'Testo2', description: 'Testo2'),
+                          SuggestionButton(title: 'Testo2', description: 'Testo2'),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -88,14 +96,14 @@ class MainSection extends StatelessWidget {
                 height: 28,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 201, 201, 201),
+                  color: const Color.fromARGB(255, 38, 53, 96),
                   borderRadius: BorderRadius.circular(24),
                   border: Border.all(
-                    color: const Color.fromARGB(255, 224, 224, 224)
+                    color: const Color.fromARGB(255, 230, 116, 232)
                   ),
                 ),
                   child: const Center(child: Text("?",
-                  style: TextStyle(color: Colors.white,fontSize: 12),
+                  style: TextStyle(color: Color.fromARGB(255, 230, 116, 232),fontSize: 12),
                   ),
                   ),
               ),

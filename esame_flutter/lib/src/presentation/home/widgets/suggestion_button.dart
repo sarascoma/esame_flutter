@@ -18,7 +18,7 @@ class _SuggestionButtonState extends State<SuggestionButton> {
   Widget build(BuildContext context) {
     final ButtonStyle=ElevatedButton.styleFrom(
       foregroundColor: Colors.white,
-      backgroundColor: isHovered ? const Color.fromARGB(255, 81, 129, 154):Colors.blueGrey[900],
+      backgroundColor: isHovered ? Color.fromARGB(255, 255, 171, 255):const Color.fromARGB(255, 38, 53, 96),
       padding: const EdgeInsets.symmetric(
         horizontal: 32.0,
         vertical: 20.0,
@@ -68,7 +68,7 @@ class _SuggestionButtonState extends State<SuggestionButton> {
                     Text(
                       widget.description,
                       style: const TextStyle(
-                        color: Color.fromARGB(255, 200, 200, 200),
+                        color: Color.fromARGB(255, 255, 255, 255),
                       ),
                     ),
                   ],
@@ -79,11 +79,11 @@ class _SuggestionButtonState extends State<SuggestionButton> {
                   width: 24,
                   height: 24,
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 84, 143, 232),
+                    color: const Color.fromARGB(255, 230, 116, 232),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Icon(CupertinoIcons.arrow_up,
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 0, 0, 0),
                     size: 12,
                     ),
                 ),

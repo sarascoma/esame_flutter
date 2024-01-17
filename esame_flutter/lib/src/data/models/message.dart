@@ -1,3 +1,6 @@
+
+
+
 enum MessageTypes {
   ai,
   user,
@@ -10,6 +13,12 @@ class Message {
   });
   final MessageTypes type;
   final String content;
+
+  static Message fromJson(Map<String, dynamic> json) {
+    return json['from'] == MessageTypes.user.name
+        ? MessageUser.fromJson(json)
+        : MessageAi.fromJson(json);
+  }
 
   @override
   String toString() => 'Message { type : $type, content : $content}';
@@ -24,9 +33,28 @@ class MessageAi extends Message {
   }
 }
 
-class MessageUSer extends Message {
-  MessageUSer({
+class MessageUser extends Message {
+  MessageUser({
     required String content,
   }) : super(type: MessageTypes.user, content: content);
-  
+  static MessageUser fromJson(Map<String, dynamic> json) {
+    return MessageUser(content: json['content']);
+  }
+}
+void main() {
+  final json = [
+    {
+      'type': 'user',
+      'message': 'ciao',
+    },
+    {
+      'type': 'assistant',
+      'message': 'ciao a te',
+    }
+  ];
+  final messages = json
+      .map(
+        (e) => Message.fromJson(e),
+      )
+      .toList();
 }
